@@ -1,0 +1,19 @@
+<h3>restricted-page works!</h3>
+<h3>Welcome {{getName()}}</h3>
+
+<table *ngIf="isLoggedIn()">
+    <tr>
+      <td>
+        <button (click)="callProfile()">Get Profile</button>
+      </td>
+      <td>
+        <button (click)="callMails()">Get Messages</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        API Response : {{apiResponse}}
+      </td>
+    </tr>
+  
+  </table>
